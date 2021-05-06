@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../../Content/JavaScript/FormularioUsuario.js"></script>
+    <link rel="stylesheet" href="../../content/css/formularioUsuario.css">
+    <title>Dolphine  - Formulário </title>
+</head>
+
+    <body>
+        <form method="POST" action="cadastrar.php">
+        <header style="height: 200px;" class="row text-white bg-dark shadow">
+            <div class="container">
+                <div class="col-lg-12 col-sm-12 mx-auto text-center">
+                    <h1 style="margin-top: 70px;">Formulário</h1>
+                </div>
+            </div>
+        </header>
+        <!--**PERGUNTA TIPO 1**-->
+        <section style="margin-top: 20px;"class="container mt-5 bg-light p-3"> 
+            <h3 class="mt-3">O quanto você gosta do ambiente da sua empresa?<span style="color: red;">*</span></h3>
+            <div class="p-3 col-lg-12 col-sm-12  mx-auto text-center">
+                <label><p class="titleinput">Não Gosto</p></label> 
+                <div class="form-check form-check-inline">
+                    <input class=" ml-2" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label titleinput ml-2" for="inlineRadio1">1</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input titleinput ml-2" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label titleinput ml-1" for="inlineRadio2">2</label>
+                </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input titleinput ml-2" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                    <label class="form-check-label titleinput ml-1" for="inlineRadio3">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input titleinput ml-2" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                    <label class="form-check-label titleinput ml-1" for="inlineRadio4">4</label>
+                  </div>
+                <label><p class="titleinput">Gosto Muito</p></label>
+                </div>
+            </div>
+        </section>
+        <!--**PERGUNTA TIPO 2**-->
+        <section class="container mt-5 bg-light p-3">
+            <h3 class="mt-3">Se não estiver satisfeito, que tipo de desconforto trás?<span style="color: red;">*</span></h3>
+            <div class="p-3 col-lg-12 col-sm-12  mx-auto text-center">
+                <div class="mt-5">
+                    <input style="width:80%" class="form-control" type="text" placeholder="Sua Resposta">
+                </div>
+            </div>
+        </section>
+        <!--**PERGUNTA TIPO 3**-->
+        <section class="container mt-5 bg-light p-3">
+        <h3 class="mt-3">Você trabalha nesta empresa a quanto tempo?<span style="color: red;">*</span></h3>
+            <div style="margin-top: 20px" class="p-3 col-lg-12 col-sm-12 mr-2">
+                <div class="form-check mt-2">
+                    <input class="form-check-input titleinput" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="mr-2 form-check-label titleinput" for="exampleRadios1">
+                        Menos de 1 ano
+                    </label>
+                  </div>
+                  <div class="form-check  mt-2 ">
+                    <input class="form-check-input titleinput" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <label class="form-check-label titleinput" for="exampleRadios2">
+                        De 1 a 2 anos
+                    </label>
+                  </div>
+                  <div class="form-check mt-2">
+                    <input class="form-check-input titleinput" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                    <label class="form-check-label titleinput" for="exampleRadios3">
+                        De 3 a 5 anos
+                    </label>
+                  </div>
+                  <div class="form-check mt-2">
+                    <input class="form-check-input titleinput" type="radio" name="exampleRadios" id="exampleRadios4" value="option4">
+                    <label class="form-check-label titleinput" for="exampleRadios4">
+                        Mais de 5 anos
+                    </label>
+                  </div>
+            </div>
+        </section>
+        <!--**PERGUNTA TIPO 4**-->
+        <section class="container mt-5 bg-light p-3">
+            <h3 class="mt-3">O que te incomoda mais em relação a sua empresa?<span style="color: red;">*</span></h3>
+                <div style="margin-top: 20px" class="p-3 col-lg-12 col-sm-12  mx-auto">
+                        <div class="form-check mt-2">
+                            <input class="form-check-input titleinput" onclick="perguntaquatroinvisivel()" type="radio" name="exampleRadiosPergunt4" id="exampleRadios5" value="option1" checked>
+                            <label class="form-check-label titleinput" for="exampleRadios5">
+                                Desentendimento interno
+                            </label>
+                      </div>
+                      <div class="form-check  mt-2">
+                        <input class="form-check-input titleinput" onclick="perguntaquatroinvisivel()" type="radio" name="exampleRadiosPergunt4" id="exampleRadios6" value="option2">
+                        <label class="form-check-label titleinput" for="exampleRadios6">
+                            Desconfortável com o ambiente
+                        </label>
+                      </div>
+                      <div class="form-check mt-2">
+                        <input class="form-check-input titleinput" onclick="perguntaquatroinvisivel()" type="radio" name="exampleRadiosPergunt4" id="exampleRadios7" value="option3">
+                        <label class="form-check-label titleinput" for="exampleRadios7">
+                            Infelicidade com o salário
+                        </label>
+                      </div>
+                      <div class="form-check mt-2">
+                        <input class="form-check-input titleinput" onclick="perguntaquatroinvisivel()" type="radio" name="exampleRadiosPergunt4" id="exampleRadios8" value="option4">
+                        <label class="form-check-label titleinput" for="exampleRadios8">
+                            Atrasos diários constantes
+                        </label>
+                      </div>
+                      <div class="form-check mt-2">
+                        <input class="form-check-input titleinput" onclick="perguntaquatro()" type="radio" name="exampleRadiosPergunt4" id="exampleRadios9" value="option5">
+                        <label class="form-check-label titleinput" for="exampleRadios9">
+                            Outros
+                        </label>
+                      </div>
+    
+                      <div style="padding-left: 0px"class="col-lg-12 col-sm-12 hidden" id="outros">
+                        <div class="form-check mt-2">
+                            <div class="">  
+                                <input style="width:80%;border-left-width: 0px;padding-left: 5px;" name="exampleRadioscamporesposta" class="form-control" type="text" placeholder="Outra opção">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--**PERGUNTA TIPO 5**-->
+        <section class="container mt-5 bg-light p-3">
+            <h3 class="mt-3">Você indicaria algum familiar, amigos ou conhecidos para trabalhar nessa empresa?<span style="color: red;">*</span></h3>
+            <div class="p-3 col-lg-12 col-sm-12 ">
+                <div class="form-check mt-2">
+                    <input class="form-check-input titleinput" type="radio" name="exampleRadiosPergunt5" id="radiotrue" value="Sim">
+                    <label class="form-check-label titleinput" for="radiotrue">
+                        Sim
+                    </label>
+              </div>
+              <div class="form-check  mt-2">
+                <input class="form-check-input titleinput" type="radio" name="exampleRadiosPergunt5" id="radiofalse" value="não">
+                <label class="form-check-label titleinput" for="radiofalse">
+                    não
+                </label>
+              </div>
+            </div>
+        </section>
+        <section class="container mt-3 mb-5">
+            <div id="button">
+                <button class="btn btn-success" type="submit"id="Enviar">Enviar</buttom>
+            </div>
+        </section>
+    </form>
+    <footer class="container mb-5">
+        <div>
+            <P class="text-center">© 2021 Dolphin Intelligence, Management Software | Todos os direitos reservados à Dolphin Intelligence</P>
+        </div>
+    </footer>
+    </body>
+</html>

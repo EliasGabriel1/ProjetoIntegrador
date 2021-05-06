@@ -1,0 +1,28 @@
+.formularioUsuario{
+    width: 30%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body p{
+    font-size: 20ox;
+}
+
+body .titleinput{
+    font-size: 20px;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+
+#outros{
+    display: none;
+}
+
+#button{
+    text-align: right;
+}
